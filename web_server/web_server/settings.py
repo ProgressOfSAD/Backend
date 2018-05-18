@@ -123,6 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'uploads'),
 )
 
 DOMAIN = 'http://172.18.158.55:8000'
@@ -133,3 +134,5 @@ EMAIL_HOST_USER = '********@163.com'
 EMAIL_HOST_PASSWORD = '********'
 EMAIL_PORT = 25
 EMAIL_USE_TLS = True
+
+LOGIN_URL = '/'
