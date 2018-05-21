@@ -138,7 +138,7 @@ class CategoryTestCase(TestCase):
 
 class DetailTestCase(TestCase):
     def setUp(self):
-        CategoryTestCase.setUp(self)
+        CategoryTestCase.setUp(TestCase)
 
     def test_detail(self):
         client = Client()
