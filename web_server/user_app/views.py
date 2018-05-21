@@ -258,6 +258,7 @@ def detail(request, bid):
     # actually, the number of book is 0 or 1
     books = models.BookInfo.objects.filter(id=bid).first()
 
+    # if the number of book is 0
     if books is None:
         result['status'] = 'failure'
         result['error_msg'] = 'invalid book id'
